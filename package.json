@@ -1,0 +1,6 @@
+{
+  "name": "create-react-drupal-theme",
+  "scripts": {
+    "create-react-drupal-theme": "echo 'hello'"
+  }
+}
