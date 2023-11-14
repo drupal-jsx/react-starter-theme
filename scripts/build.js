@@ -9,5 +9,4 @@ const config = {
   jsx: 'automatic',  
 }
 
-esbuild.build(config)
-.catch(() => process.exit(1));
+await esbuild.build(config);
