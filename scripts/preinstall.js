@@ -2,7 +2,9 @@ import packageInfo from "../package.json";
 
 const drupalThemeName = packageInfo.name.replaceAll('-', '_');
 
-const f = Bun.file('scaffold/drupal/info.yml');
-const scaffoldInfo = await f.text();
-const info = scaffoldInfo.replaceAll('NAME', drupalThemeName);
-await Bun.write(`${drupalThemeName}.info.yml`, info);
+['info', 'libraries'].forEach(function(partialFileName) {
+  const f = Bun.file(`scaffold/drupal/${partialFileName}.yml`);
+  const scaffoldContent = await f.text();
+  const content = scaffoldContent.replaceAll('NAME', drupalThemeName);
+  await Bun.write(`${drupalThemeName}.${partialFileName}.yml`, content);  
+})
