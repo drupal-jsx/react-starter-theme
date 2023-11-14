@@ -8,4 +8,4 @@ for (const file of files) {
   const scaffoldContent = await f.text();
   const content = scaffoldContent.replaceAll('NAME', drupalThemeName);
   await Bun.write(`${drupalThemeName}.${file}.yml`, content);  
-})
+}
