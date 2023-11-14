@@ -1,3 +1,8 @@
-import data from "./package.json";
+import packageInfo from "./package.json";
 
-console.log(data.name);
+const drupalThemeName = packageInfo.name.replaceAll('-', '_');
+
+const f = Bun.file('scaffold/drupal/info.yml');
+const scaffoldInfo = await f.text();
+const info = scaffoldInfo.replaceAll('NAME', drupalThemeName);
+await Bun.write(`${drupalThemeName}.info.yml`, info);
