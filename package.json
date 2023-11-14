@@ -1,4 +1,4 @@
 {
   "name": "create-react-drupal-theme",
-  "bin": "./index.js"
+  "bin": "./bin.js"
 }
