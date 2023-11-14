@@ -1,6 +1,8 @@
+import { Theme } from '@radix-ui/themes';
+
 export default function DrupalPage({ page }) {
   return (
-    <>
+    <Theme>
       { page.header }
       { page.primaryMenu }
       { page.secondaryMenu }
@@ -14,6 +16,6 @@ export default function DrupalPage({ page }) {
         { page.sidebarSecond }
       </main>
       { page.footer }
-    </>
+    </Theme>
   );
 }
