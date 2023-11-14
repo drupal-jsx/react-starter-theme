@@ -1,0 +1,14 @@
+app:
+  js:
+    dist.js:
+      # Render the app before other JS code with weight 0 or higher, in case
+      # that other code execute query selectors on the document.
+      weight: -1
+      # React defers DOM operations to a fiber, so later JS code within the
+      # same aggregate would run before those operations are performed, and
+      # their document query selectors would fail.
+      preprocess: false
+  css:
+    theme:
+      dist.css:
+        weight: 11
