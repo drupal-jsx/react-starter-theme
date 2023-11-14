@@ -2,6 +2,7 @@ import { createElement as h, Fragment } from 'react';
 import { createRoot } from 'react-dom/client';
 import hyperscriptify from 'hyperscriptify';
 import propsify from 'hyperscriptify/propsify/standard';
+import '@radix-ui/themes/styles.css';
 
 import components from './components';
 components['drupal-html-fragment'] = Fragment;
