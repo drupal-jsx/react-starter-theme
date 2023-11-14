@@ -3,5 +3,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "bun-create": {
+    "preinstall": "bun run scaffold.js"
   }
 }
