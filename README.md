@@ -1,1 +1,1 @@
-# create-react-drupal-theme
+# React Starter Theme
