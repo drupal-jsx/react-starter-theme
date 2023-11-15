@@ -1,6 +1,6 @@
 app:
   js:
-    dist.js:
+    dist/app.js:
       # Render the app before other JS code with weight 0 or higher, in case
       # that other code execute query selectors on the document.
       weight: -1
@@ -10,7 +10,7 @@ app:
       preprocess: false
   css:
     theme:
-      dist.css:
+      dist/app.css:
         # For competing CSS property declarations targeting equal selector
         # specificities, prioritize the app over Drupal's other CSS.
         weight: 11
