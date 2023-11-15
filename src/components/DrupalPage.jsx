@@ -35,3 +35,19 @@ DrupalPage.propTypes = {
     footer: PropTypes.element,
   }),
 }
+
+// @todo Figure out how to not need this and instead get it from propTypes.
+DrupalPage.drupalPropTypes = {
+  page: {
+    header: 'JSX.Element',
+    primaryMenu: 'JSX.Element',
+    secondaryMenu: 'JSX.Element',
+    breadcrumb: 'JSX.Element',
+    highlighted: 'JSX.Element',
+    help: 'JSX.Element',
+    content: 'JSX.Element',
+    sidebarFirst: 'JSX.Element',
+    sidebarSecond: 'JSX.Element',
+    footer: 'JSX.Element',
+  },
+}
