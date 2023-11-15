@@ -11,4 +11,9 @@ app:
   css:
     theme:
       dist.css:
+        # For competing CSS property declarations targeting equal selector
+        # specificities, prioritize the app over Drupal's other CSS.
         weight: 11
+        # Radix UI generates a large CSS file. Until that's resolved, keep
+        # this CSS file out of Drupal's aggregate CSS files.
+        preprocess: false
