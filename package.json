@@ -1,8 +1,8 @@
 {
-  "name": "react-starter-theme",
+  "name": "starter-react",
   "scripts": {
     "dev": "vite",
-    "build": "bun run ./scripts/build.js"
+    "build": "rm dist/app.* dist/prop-types/*; bun run ./scripts/build.js; bun run ./scripts/export-prop-types.js"
   },
   "dependencies": {
     "react": "^18.2.0",
