@@ -1,5 +1,5 @@
-<!-- 
-See the "For development" step of 
+<!--
+See the "For development" step of
 https://vitejs.dev/guide/backend-integration.html for details.
 -->
 <script type="module">
@@ -10,4 +10,4 @@ https://vitejs.dev/guide/backend-integration.html for details.
   window.__vite_plugin_react_preamble_installed__ = true
 </script>
 <script type="module" src="http://localhost:5173/@vite/client"></script>
-<script type="module" src="http://localhost:5173/src/index.js"></script>
+<script type="module" src="http://localhost:5173/index.js"></script>
