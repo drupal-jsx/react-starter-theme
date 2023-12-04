@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-neutral-700;
+  }
+  a {
+    @apply text-sky-700;
+  }
+}
