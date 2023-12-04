@@ -10,7 +10,7 @@ export default function DrupalPage({ page }) {
       { page.highlighted }
       { page.help }
       <main role="main">
-        <a id="main-content" tabindex="-1"></a>
+        <a id="main-content" tabIndex="-1"></a>
         { page.content }
         { page.sidebarFirst }
         { page.sidebarSecond }
