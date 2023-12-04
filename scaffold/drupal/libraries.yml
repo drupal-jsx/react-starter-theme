@@ -1,19 +1,9 @@
 app:
   js:
     dist/app.js:
-      # Render the app before other JS code with weight 0 or higher, in case
-      # that other code execute query selectors on the document.
-      weight: -1
-      # React defers DOM operations to a fiber, so later JS code within the
-      # same aggregate would run before those operations are performed, and
-      # their document query selectors would fail.
+      attributes: {type: module}
       preprocess: false
   css:
     theme:
       dist/app.css:
-        # For competing CSS property declarations targeting equal selector
-        # specificities, prioritize the app over Drupal's other CSS.
-        weight: 11
-        # Radix UI generates a large CSS file. Until that's resolved, keep
-        # this CSS file out of Drupal's aggregate CSS files.
         preprocess: false
