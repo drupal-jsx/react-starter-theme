@@ -1,22 +1,24 @@
 {
   "name": "starter-react",
+  "type": "module",
   "scripts": {
     "dev": "bunx --bun vite --clearScreen false",
-    "build": "rm dist/app.* dist/prop-types/*; bun run ./scripts/build.js; bun run ./scripts/export-prop-types.js"
+    "build": "bunx --bun vite build; mkdir dist/prop-types; bun run ./scripts/export-prop-types.js"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "prop-types": "^15.8.1",
-    "lodash-es": "^4.0.0",
     "hyperscriptify": "github:effulgentsia/hyperscriptify",
-    "@radix-ui/themes": "^2.0.0"
+    "lodash-es": "^4.0.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "vite": "^5.0.0",
-    "@vitejs/plugin-react-swc": "^3.4.1",
     "@drupal-jsx/vite-plugin-drupal": "github:drupal-jsx/vite-plugin-drupal",
-    "esbuild": "^0.19.0"
+    "@vitejs/plugin-react-swc": "^3.4.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.5",
+    "vite": "^5.0.0"
   },
   "bun-create": {
     "postinstall": [
