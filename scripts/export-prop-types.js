@@ -25,16 +25,13 @@ PropTypes.arrayOf = new Proxy(PropTypes.arrayOf, {
 // Dynamic import so that it happens after the above changes to PropTypes.
 const {default: components} = await import('../src/components');
 
-// Generate the *.template-info.json files for Drupal. For logging, match
-// esbuild's formatting of indenting each generated file and adding an initial
-// and final newline around the group of files.
-console.log();
+// Generate the *.template-info.json files for Drupal.
+console.log("Generating *.template-info.json files for Drupal...");
 for (const tagName in components) {
   if (tagName.startsWith('drupal-') && components[tagName].propTypes) {
     const templateName = tagName.substring(7);
     const templateFileName = `dist/prop-types/${templateName}.template-info.json`;
     await Bun.write(templateFileName, JSON.stringify({props: components[tagName].propTypes}));
-    console.log('  ' + templateFileName);
+    console.log(templateFileName);
   }
 }
-console.log();
