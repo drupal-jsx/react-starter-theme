@@ -5,3 +5,5 @@ engine: jsx
 base theme: false
 libraries:
   - NAME/app
+logo: assets/logo.svg
+screenshot: assets/screenshot.png
