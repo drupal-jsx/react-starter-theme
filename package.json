@@ -21,8 +21,10 @@
     "vite": "^5.0.0"
   },
   "bun-create": {
+    "preinstall": [
+      "./scripts/scaffold.js"
+    ],
     "postinstall": [
-      "./scripts/scaffold.js",
       "bun run build"
     ]
   }
