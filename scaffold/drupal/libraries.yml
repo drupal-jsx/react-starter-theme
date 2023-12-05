@@ -1,9 +1,0 @@
-app:
-  js:
-    dist/app.js:
-      attributes: {type: module}
-      preprocess: false
-  css:
-    theme:
-      dist/app.css:
-        preprocess: false
