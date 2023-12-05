@@ -1,5 +1,5 @@
 import packageInfo from "../package.json";
-import { mkdir, rm } from 'node:fs/promises';
+import { rm } from 'node:fs/promises';
 
 const drupalThemeName = packageInfo.name.replaceAll('-', '_');
 
