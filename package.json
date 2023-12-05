@@ -23,7 +23,7 @@
   },
   "bun-create": {
     "preinstall": [
-      "./scripts/scaffold.js"
+      "./scaffold/scaffold.js"
     ],
     "postinstall": [
       "bun run build"
