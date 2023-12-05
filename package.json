@@ -6,8 +6,8 @@
     "build": "bunx --bun vite build; mkdir dist/prop-types; bun run ./scripts/export-prop-types.js"
   },
   "dependencies": {
-    "hyperscriptify": "github:effulgentsia/hyperscriptify",
-    "lodash-es": "^4.0.0",
+    "@drupal-jsx/drupal-utils": "github:effulgentsia/drupal-jsx/drupal-utils",
+    "@drupal-jsx/drupal-utils-react": "github:effulgentsia/drupal-jsx/drupal-utils-react",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
