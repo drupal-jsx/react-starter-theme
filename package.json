@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "dev": "bunx --bun vite --clearScreen false",
-    "build": "bunx --bun vite build; mkdir dist/prop-types; bun run ./build/export-prop-types.js"
+    "build": "bunx --bun vite build; bun run ./build/export-prop-types.js"
   },
   "dependencies": {
     "@drupal-jsx/drupal-utils": "github:drupal-jsx/drupal-utils",
