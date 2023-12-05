@@ -1,9 +1,0 @@
-name: NAME
-type: theme
-core_version_requirement: ^10 || ^11
-engine: jsx
-base theme: false
-libraries:
-  - NAME/app
-logo: assets/logo.svg
-screenshot: assets/screenshot.png
