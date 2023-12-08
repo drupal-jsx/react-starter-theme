@@ -1,5 +1,10 @@
 ## Installation instructions
 
+### 0. Install PHP, Composer, and Bun
+If you don't already have [PHP](https://www.php.net/manual/en/install.php),
+[Composer](https://getcomposer.org/download/), or [Bun](https://bun.sh/) on
+your system, install them.
+
 ### 1. Install the Drupal codebase
 ```
 composer create-project drupal/recommended-project my-drupal-site
