@@ -45,7 +45,8 @@ export PATH=$(pwd)/vendor/bin:$PATH
 
 ### 6. Configure the Drupal site to use the React theme
 ```
-drush install jsx_vite jsx_devel
+drush pm:uninstall big_pipe
+drush pm:install jsx_vite jsx_devel
 drush theme:install my_theme
 drush config:set system.theme default my_theme --no-interaction
 ```
