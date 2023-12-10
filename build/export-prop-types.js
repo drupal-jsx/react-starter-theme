@@ -1,5 +1,7 @@
 import { exportPropTypes } from '@drupal-jsx/drupal-utils-dev';
 import { mkdir } from 'node:fs/promises';
+import { Glob } from 'bun';
 
 await mkdir('dist/prop-types', { recursive: true });
-await exportPropTypes(process.cwd() + '/src/components.js', 'dist/prop-types');
+const glob = new Glob('src/components/Drupal*.jsx');
+await exportPropTypes(glob.scan('.'), 'dist/prop-types');
