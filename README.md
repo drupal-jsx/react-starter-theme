@@ -7,7 +7,7 @@ your system, install them.
 
 ### 1. Install the Drupal codebase
 ```
-composer create-project drupal/recommended-project my-drupal-site
+composer create-project drupal/recommended-project:^11@dev my-drupal-site
 cd my-drupal-site
 composer config repositories.drupal/jsx vcs https://git.drupalcode.org/project/jsx.git
 composer require drush/drush drupal/jsx:@dev
