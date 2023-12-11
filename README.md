@@ -51,7 +51,8 @@ export PATH=$(pwd)/vendor/bin:$PATH
 ```
 
 *If you don't want to add Drush to your path, you could instead edit
-`web/themes/custom/my-theme/vite.config.js` to specify the path to Drush.*
+`web/themes/custom/my-theme/vite.config.js`, `web/themes/custom/my-theme/build/export-prop-types.js`,
+and the commands in the following step to include the path to Drush.*
 
 ### 6. Configure the Drupal site to use the React theme
 ```
