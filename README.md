@@ -21,8 +21,9 @@ bun create drupal-jsx/starter-react my-theme
 cd my-theme
 ```
 
-The above might show errors with resolving some of the packages. If that
-happens, you can fix it with:
+The above might show errors with resolving some of the packages (sometimes
+Bun is so fast that GitHub can't keep up). If that happens, you can fix it
+with:
 ```
 # Repeat this until it succeeds:
 bun install
