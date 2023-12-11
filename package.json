@@ -2,7 +2,7 @@
   "name": "starter-react",
   "type": "module",
   "scripts": {
-    "dev": "bunx --bun vite --clearScreen false",
+    "dev": "bun run ./build/export-prop-types.js; bunx --bun vite --clearScreen false",
     "build": "bunx --bun vite build; bun run ./build/export-prop-types.js"
   },
   "dependencies": {
