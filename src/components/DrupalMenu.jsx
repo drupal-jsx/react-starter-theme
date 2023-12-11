@@ -18,5 +18,11 @@ export default function DrupalMenu({ attributes, items }) {
 
 DrupalMenu.propTypes = {
   attributes: PropTypes.object,
-  items: PropTypes.object,
+  items: PropTypes.objectOf(PropTypes.shape({
+    title: PropTypes.string,
+    url: PropTypes.string,
+    // @todo Change this to a (not infinitely) recursive object of shapes like
+    //   the parent items.
+    below: PropTypes.object,
+  })),
 }
