@@ -10,12 +10,12 @@ export default function DrupalLayout__TwocolSection({ attributes, content, regio
   return(
     <div { ...props(attributes) } className="flex flex-row justify-between" >
       { content.first &&
-        <div { ...props(regionAttributes?.first) } className={ clsx(regionAttributes?.first?.class, 'basis-1/2') }>
+        <div { ...props(regionAttributes?.first) } className={ clsx(regionAttributes?.first?.class, 'w-1/2') }>
           { content.first }
         </div>
       }
       { content.second &&
-        <div { ...props(regionAttributes?.second) } className={ clsx(regionAttributes?.second?.class, 'basis-1/2') }>
+        <div { ...props(regionAttributes?.second) } className={ clsx(regionAttributes?.second?.class, 'w-1/2') }>
           { content.second }
         </div>
       }
