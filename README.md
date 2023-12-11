@@ -22,8 +22,8 @@ cd my-theme
 ```
 
 The above might show errors with resolving some of the packages (sometimes
-Bun is so fast that GitHub can't keep up). If that happens, you can fix it
-with:
+Bun is so fast that GitHub can't keep up; this won't be a problem once the
+packages are published to npm). If that happens, you can fix it with:
 ```
 # Repeat this until it succeeds:
 bun install
@@ -38,7 +38,10 @@ cd ../../../..
 php ./web/core/scripts/drupal quick-start
 ```
 
-*This will leave you in a running process that serves the Drupal site. Don't exit it. If you accidentally do, you can restart it with `cd web; php -S 127.0.0.1:8888 .ht.router.php` (replace 8888 with a different port if the original quick-start command used a different port).*
+*This will leave you in a running process that serves the Drupal site. Don't
+exit it. If you accidentally do, you can restart it with
+`cd web; php -S 127.0.0.1:8888 .ht.router.php` (replace 8888 with a different
+port if the original quick-start command used a different port).*
 
 ### 4. Open a new terminal window and cd to the my-drupal-site directory.
 
@@ -47,7 +50,8 @@ php ./web/core/scripts/drupal quick-start
 export PATH=$(pwd)/vendor/bin:$PATH
 ```
 
-*If you don't want to add Drush to your path, you could instead edit `web/themes/custom/my-theme/vite.config.js` to specify the path to Drush.*
+*If you don't want to add Drush to your path, you could instead edit
+`web/themes/custom/my-theme/vite.config.js` to specify the path to Drush.*
 
 ### 6. Configure the Drupal site to use the React theme
 ```
