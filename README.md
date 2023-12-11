@@ -21,7 +21,7 @@ bun create drupal-jsx/starter-react my-theme
 cd my-theme
 ```
 
-The above might show errors with resolving some of the package. If that
+The above might show errors with resolving some of the packages. If that
 happens, you can fix it with:
 ```
 # Repeat this until it succeeds:
