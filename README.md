@@ -37,7 +37,7 @@ cd ../../../..
 php ./web/core/scripts/drupal quick-start
 ```
 
-*This will leave you in a running process that serves the Drupal site. Don't exit it. If you accidentally do, you can restart it with `php -S 127.0.0.1:8890 -t web/` (replace 8890 with a different port if the original quick-start command used a different port).*
+*This will leave you in a running process that serves the Drupal site. Don't exit it. If you accidentally do, you can restart it with `cd web; php -S 127.0.0.1:8888 .ht.router.php` (replace 8888 with a different port if the original quick-start command used a different port).*
 
 ### 4. Open a new terminal window and cd to the my-drupal-site directory.
 
