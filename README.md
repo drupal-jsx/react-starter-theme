@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a template project for creating a new Drupal theme (the front-end of a Drupal website) that uses Drupal's new and still in early stage development [JSX theme engine](https://www.drupal.org/project/jsx) (read: do not use it in production). The basic concept of this is that you develop your Drupal theme just like you would if you were doing it in Twig, but instead of creating Twig files, you create JSX files that are rendered by React (or a different JSX rendering library, but **this** repository uses React).
+This is a template project for creating a new Drupal theme (the front-end of a Drupal website) that uses Drupal's new and still in early stage development [JSX theme engine](https://www.drupal.org/project/jsx) (read: do not use it in production). The basic concept of this is that you develop your Drupal theme just like you would if you were doing it in Twig, but instead of creating Twig files, you create JSX files that are rendered by React (or a different JSX rendering library, but *this* repository uses React).
 
 If you already have a Drupal site setup and the JSX theme engine installed, then starting a new custom theme from this template project only requires:
 ```
@@ -14,13 +14,13 @@ This template project includes Vite as a dev dependency, so you can benefit from
 cd my-theme
 bun dev
 ```
-** And also within Drupal enabling the "JSX Theme Engine Vite Integration" module that's included in https://www.drupal.org/project/jsx. **
+*And also within Drupal enabling the "JSX Theme Engine Vite Integration" module that's included in https://www.drupal.org/project/jsx.*
 
 Once you're ready to deploy to production (or rather, to simulate doing so, because per the first sentence of this README, do not actually deploy this to production), you can:
 ```
 bun run build
 ```
-** And also within Drupal uninstall the "JSX Theme Engine Vite Integration" module. **
+*And also within Drupal uninstall the "JSX Theme Engine Vite Integration" module.*
 
 If you're starting without a Drupal site already installed, then see the [complete installation instructions](#installation-instructions).
 
