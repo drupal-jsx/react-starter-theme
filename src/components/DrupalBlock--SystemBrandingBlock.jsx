@@ -10,7 +10,7 @@ export default function DrupalBlock__SystemBrandingBlock({ siteLogo, siteName, s
         </a>
       }
       { siteName &&
-        <a href={ Drupal.url('') } rel="home">{ siteName }</a>
+        <a className="branding__site-name" href={ Drupal.url('') } rel="home">{ siteName }</a>
       }
       { siteSlogan }
     </>

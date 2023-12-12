@@ -3,7 +3,7 @@ import { props } from '@drupal-jsx/drupal-utils';
 
 export default function DrupalBlock({ attributes, label, content, titlePrefix, titleAttributes, titleSuffix }) {
   return(
-    <div { ...props(attributes) }>
+    <div { ...props(attributes) } className="block__container">
       { titlePrefix }
       { label &&
         <h2 { ...props(titleAttributes) }>{ label }</h2>
