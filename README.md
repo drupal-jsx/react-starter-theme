@@ -9,7 +9,7 @@ If you already have a Drupal site setup and the JSX theme engine installed, then
 bun create drupal-jsx/starter-react my-theme
 ```
 
-This template project includes Vite as a dev dependency, so you can benefit from its HMR and other development productivity features by running:
+This template project includes [Vite](https://vitejs.dev/) as a dev dependency, so you can benefit from its HMR and other development productivity features by running:
 ```
 cd my-theme
 bun dev
