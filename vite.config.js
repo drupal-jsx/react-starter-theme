@@ -1,7 +1,7 @@
 import react from "@vitejs/plugin-react-swc";
 import drupal from "@drupal-jsx/vite-plugin-drupal";
 
-export default {
+export default defineConfig({
   plugins: [
     react(),
     drupal({
@@ -20,5 +20,8 @@ export default {
         assetFileNames: ({name}) => (name === 'index.css' ? 'app.css' : '[name][extname]'),
       }
     },
+  },
+  server: {
+    origin: "http://127.0.0.1:8888/themes/custom/my-theme"
   }
-}
+})
