@@ -1,7 +1,7 @@
 import react from "@vitejs/plugin-react-swc";
 import drupal from "@drupal-jsx/vite-plugin-drupal";
 
-export default defineConfig({
+export default {
   plugins: [
     react(),
     drupal({
@@ -24,4 +24,4 @@ export default defineConfig({
   server: {
     origin: "http://127.0.0.1:8888/themes/custom/my-theme"
   }
-})
+}
