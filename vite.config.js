@@ -20,5 +20,8 @@ export default {
         assetFileNames: ({name}) => (name === 'index.css' ? 'app.css' : '[name][extname]'),
       }
     },
+  },
+  server: {
+    origin: "http://127.0.0.1:8888/themes/custom/my-theme"
   }
 }
