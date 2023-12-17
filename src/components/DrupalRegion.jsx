@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-import { props } from '@drupal-jsx/drupal-utils';
+import { attributesToProps as p } from '@drupal-jsx/drupal-utils';
 
 export default function DrupalRegion({ attributes, content }) {
   if (!content) { return <></>; }
 
   return(
-    <div { ...props(attributes) } >
+    <div { ...p(attributes) } >
       { content }
     </div>
   );
