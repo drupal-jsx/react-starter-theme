@@ -25,9 +25,6 @@
   "bun-create": {
     "preinstall": [
       "./scaffold/scaffold.js"
-    ],
-    "postinstall": [
-      "bun run build"
     ]
   }
 }
