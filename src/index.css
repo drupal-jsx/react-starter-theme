@@ -2,11 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Nunito';
+  src: url('../assets/fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; /* Specify the font weight range for the variable font */
+  font-stretch: 50% 200%;
+}
+@font-face {
+  font-family: 'Poppins SemiBold';
+  src: url('../assets/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+}
+
 @layer base {
   body {
     @apply text-neutral-700;
   }
   a {
     @apply text-sky-700;
+  }
+}
+
+@layer utilities {
+  .text-rem-sm {
+    font-size: 1.8rem;
+  }
+
+  .text-rem-lg {
+    font-size: 6rem;
   }
 }

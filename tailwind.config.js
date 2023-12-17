@@ -5,6 +5,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ['Poppins SemiBold', 'sans-serif'],
+        nunito: ['Nunito', 'sans-serif'],
+      },
     },
   },
   plugins: [],
