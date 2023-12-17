@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
-import { props } from '@drupal-jsx/drupal-utils';
+import { attributesToProps as p } from '@drupal-jsx/drupal-utils';
 
 export default function DrupalBlock({ attributes, label, content, titlePrefix, titleAttributes, titleSuffix }) {
   return(
-    <div { ...props(attributes) } className="block__container">
+    <div { ...p(attributes) } className="block__container">
       { titlePrefix }
       { label &&
-        <h2 { ...props(titleAttributes) }>{ label }</h2>
+        <h2 { ...p(titleAttributes) }>{ label }</h2>
       }
       { titleSuffix }
       { content }
