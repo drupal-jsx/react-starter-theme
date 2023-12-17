@@ -1,3 +1,4 @@
+import packageInfo from "../package.json";
 import react from "@vitejs/plugin-react-swc";
 import drupal from "@drupal-jsx/vite-plugin-drupal";
 
@@ -23,6 +24,6 @@ export default {
     },
   },
   server: {
-    origin: "http://127.0.0.1:8888/themes/custom/my-theme"
+    origin: `http://127.0.0.1:8888/themes/custom/${packageInfo.name}`
   }
 }
