@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
-import { props } from '@drupal-jsx/drupal-utils';
+import { attributesToProps as p } from '@drupal-jsx/drupal-utils';
 
 export default function DrupalMenu({ attributes, items }) {
   if (!items) { return <></>; }
 
   return(
-    <ul { ...props(attributes) } >
+    <ul { ...p(attributes) } >
       { Object.keys(items).map((key) =>
-        <li key={ key } { ...props(items[key].attributes) }>
+        <li key={ key } { ...p(items[key].attributes) }>
           <a href={ items[key].url }>{ items[key].title }</a>
           <DrupalMenu items={ items[key].below }></DrupalMenu>
         </li>
