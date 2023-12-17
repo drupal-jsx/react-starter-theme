@@ -7,6 +7,7 @@ export default {
     drupal({
       drupalTemplatesDir: 'dist/prop-types',
       drushPath: 'drush',
+      sqlitePath: '../../../sites/default/files/.sqlite',
     }),
   ],
   build: {
