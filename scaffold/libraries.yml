@@ -7,3 +7,5 @@ app:
     theme:
       dist/app.css:
         preprocess: false
+  dependencies:
+    - core/drupal
