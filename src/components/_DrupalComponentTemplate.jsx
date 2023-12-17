@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
-import { props } from '@drupal-jsx/drupal-utils';
+import { attributesToProps as p } from '@drupal-jsx/drupal-utils';
 import clsx from 'clsx';
 
 // Step 2: After step 1, also add each prop as a destructured variable to the
 // below function signature.
 export default function DrupalComponent({ attributes }) {
   return(
-    <div { ...props(attributes) } >
+    <div { ...p(attributes) } >
       {/* Step 3: Use the variables added in step 2 as needed. */}
       REPLACE THIS WITH REAL CONTENT
     </div>
